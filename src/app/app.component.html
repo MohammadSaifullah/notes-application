@@ -1,0 +1,32 @@
+<div class="outerbox">
+
+  <div class="folder"><br>
+    <div class="main">
+      <button *ngFor="let x of folder ;index as i" class="folderButton" (click)="openFile()"> 📁 {{x.fold}}</button><br>
+      <button class="newFolder" (click)="addFolder()">New Folder</button><br>
+      <button class="clear" (click)="clear()">Delete All</button>
+    </div>
+  </div>
+  <div class="files">
+    <a>
+      <p *ngFor="let x of file ;index as i"> 🗒️ Title: <br>{{x.noteTitle}} <br><br>Content: <br>{{x.noteBody}}
+
+        <button class="delete" (click)="delete(i)">X</button>
+      </p>
+
+    </a>
+
+    <!-- <button class="newFile">New File</button> -->
+
+  </div>
+  <div class="notepad">
+    <div class="innerNotePad" [(ngModel)]="titles">
+      <label for=".title">Title</label><br><input type="text" class="title" [(ngModel)]="titles" ngDefaultControl>
+      <br>
+
+      <label for=".body">Content</label><br><textarea class="body" [(ngModel)]="bodies" ngDefaultControl></textarea><br>
+      <button class="save" (click)="saveFile()">Save</button>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>
