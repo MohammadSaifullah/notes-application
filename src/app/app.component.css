@@ -58,7 +58,6 @@ body{
     border-left: gray 5px solid;
     border-right: gray;
 }
-
 label{
     margin: 20px;
 }
@@ -81,12 +80,10 @@ input{
     border-color: transparent;
 }
 p{
-    
     border-radius: 5px;
     padding: 10px;
     background-color: rgb(240, 240, 240);
 }
-
 p:hover{
     background-color: rgb(172, 172, 172);
 }
@@ -120,7 +117,6 @@ p:hover{
     background-color: lightgray;
 }
 .files p{
-    
     font-weight:bold;
     font-size: 17px;
     position: relative;
@@ -156,11 +152,9 @@ p:hover{
     height: 30px;
     margin-left: 30px;
     font-family: 'Times New Roman', Times, serif;
-
 }
 .save:hover{
-    background-color: lightgray;
-   
+    background-color: lightgray;   
 }
 .folderButton{
     border:transparent 1px solid;
